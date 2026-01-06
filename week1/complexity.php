@@ -10,9 +10,15 @@ $endTime = microtime(true);
 $executionTime = $endTime - $startTime;
 echo 'Execution time: '.$executionTime.'micro seconds'. "\n";
 
+// Example on o(n) Foreach or is_array()
 
-
-
+$startTime = microtime(true);
+foreach($array as $ar){
+    echo $ar . "\n";
+}
+$endTime = microtime(true);
+$executionTime = $endTime - $startTime;
+echo 'Execution time: '.$executionTime.'micro seconds'. "\n";
 
 
 
